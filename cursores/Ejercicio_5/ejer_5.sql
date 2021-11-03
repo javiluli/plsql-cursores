@@ -1,0 +1,30 @@
+-- 5.- VISUALIZAR EL NUMDE Y DOS EMPLEADOS QUE MENOS GANAN (min salar) DE CADA NUMDE.
+
+SET SERVEROUTPUT ON;
+DECLARE
+  CURSOR C1 IS SELECT NOMEM, NUMDE, SALAR FROM TEMPLE ORDER BY NUMDE, SALAR;
+  LINEA_C1 C1%ROWTYPE;
+  CONTADOR NUMBER:=0;
+  AUX TEMPLE.NUMDE%TYPE;
+  salaraux temple.salar%type;
+BEGIN
+  OPEN C1;
+  FETCH C1 INTO LINEA_C1;
+  WHILE C1%FOUND LOOP
+     CONTADOR:=0;
+     AUX:= LINEA_C1.NUMDE;
+     salaraux :=LINEA_C1.salar;
+     WHILE C1%FOUND AND AUX=LINEA_C1.NUMDE LOOP
+           if salaraux =LINEA_C1.salar THEN
+            IF CONTADOR < 2 THEN  
+                
+               DBMS_OUTPUT.PUT_LINE(LINEA_C1.NOMEM||'  '||AUX);
+        
+              END IF;
+            CONTADOR := CONTADOR +1;
+           end if;
+        FETCH C1 INTO LINEA_C1;
+     END LOOP;
+  END LOOP;
+  CLOSE C1;
+END;

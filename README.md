@@ -1,0 +1,20 @@
+# Cursores en PL/SQL (lenguaje procedural de ORACLE)
+
+Ejercicio de práctica para aprender a utilizar cursores en PL/SQL
+
+- [Ejercicio 1](#)
+  - [Formula 1](#)
+  - [Formula 2](#)
+- [Ejercicio 2](#)
+  - [Formula 1](#)
+  - [Formula 2](#)
+  - [Formula 3](#)
+- [Ejercicio 3](#)
+  - [Formula 1](#)
+  - [Formula 2](#)
+- [Ejercicio 4](#)
+- [Ejercicio 5](#)
+- [Ejercicio 6](#)
+  - [Formula 1](#)
+  - [Formula 2](#)
+- [Ejercicio 7](#)
