@@ -9,7 +9,7 @@ import bbdd.ConexionOracle;
 import exceptions.DAOException;
 import recursos.DBQuery;
 
-public class ejer_7_formula_1 {
+public class ejer_7 {
 
   public static void main(String[] args) {
 
