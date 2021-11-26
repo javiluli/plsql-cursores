@@ -9,7 +9,7 @@ import bbdd.ConexionOracle;
 import exceptions.DAOException;
 import recursos.DBQuery;
 
-public class ejer_5_formula_1 {
+public class ejer_5 {
 
   public static void main(String[] args) {
 
@@ -48,7 +48,7 @@ public class ejer_5_formula_1 {
 
               if (contEmpleados < 2) { // se muestran solo 2 empelados
                 System.out.println("Empleado: " + datos.getString("nomem") 
-                                    + "Nº. Departamento: " + datos.getInt("numde") 
+                                    + "NÂº. Departamento: " + datos.getInt("numde") 
                                     + " Salario: " + datos.getDouble("salar"));
               }
               contEmpleados += 1;
