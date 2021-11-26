@@ -9,7 +9,7 @@ import bbdd.ConexionOracle;
 import exceptions.DAOException;
 import recursos.DBQuery;
 
-public class ejer_4_formula_1 {
+public class ejer_4 {
 
   public static void main(String[] args) {
 
@@ -44,7 +44,7 @@ public class ejer_4_formula_1 {
 
             if (auxSalar == datos.getDouble("salar")) { // mismo salario
               System.out.println("Empleado: " + datos.getString("nomem") 
-                                  + " | Nº. Departamento: " + datos.getInt("numde") 
+                                  + " | NÂº. Departamento: " + datos.getInt("numde") 
                                   + " | Salario: " + datos.getDouble("salar"));
             }
             // vulevo a leer para ver si hay datos
